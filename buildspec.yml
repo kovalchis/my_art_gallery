@@ -8,6 +8,8 @@ env:
 phases:
   install:
     commands:
+      - echo Ruby 3.3.7 install
+      - rbenv install 3.3.7
       - echo Bundle install...
       - bundle install
       - bundle exec rake db:migrate
